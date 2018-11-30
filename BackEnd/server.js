@@ -4,7 +4,7 @@ var path = require('path');
 var bodyParser = require('body-parser');
 
 var mongoose = require('mongoose');
-var mongoDB = 'mongodb://admin:hello123@ds239903.mlab.com:39903/lab5';
+var mongoDB = 'mongodb://jayrich97:abc12345@ds119374.mlab.com:19374/bookdb';
 mongoose.connect(mongoDB);
 
 var Schema = mongoose.Schema;
@@ -27,11 +27,6 @@ app.use(function(req, res, next) {
     next();
     });
     
-app.post('/name', function(req, res){
-    res.send("Hello you sent " +
-    req.body.firstname + " " +
-    req.body.lastname);
-})
 
 app.get('/', function (req, res) {
    res.send('Hello from Express');
