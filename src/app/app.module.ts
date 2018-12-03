@@ -31,7 +31,16 @@ const appRoutes: Routes = [
   {
     path: 'edit/:id',
     component: PostEditComponent
+  },
+  {
+    path: 'contact',
+    component: ContactUsComponent
+  },
+  {
+    path : 'about',
+    component: AboutUsComponent
   }
+
 ];
 
 
